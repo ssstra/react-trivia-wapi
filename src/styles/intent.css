@@ -1,0 +1,29 @@
+:root {
+  --intent-color-dark: #000;
+  --intent-color-light: #7f7f7f;
+  --intent-color-very-light: #e5e5e5;
+}
+
+.intent-warning {
+  --intent-color-dark: #c69f0c;
+  --intent-color-light: #f6da71;
+  --intent-color-very-light: #fdf7e2;
+
+  color: var(--intent-color-dark);
+}
+
+.intent-success {
+  --intent-color-dark: #228b22;
+  --intent-color-light: #77dd77;
+  --intent-color-very-light: #e3f8e3;
+
+  color: var(--intent-color-dark);
+}
+
+.intent-failure {
+  --intent-color-dark: #b22222;
+  --intent-color-light: #e78181;
+  --intent-color-very-light: #fae5e5;
+
+  color: var(--intent-color-dark);
+}

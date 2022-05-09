@@ -1,0 +1,83 @@
+.question-heading-container {
+  height: 20%;
+}
+
+.question-content {
+  margin: 0 10px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 60%;
+}
+
+@media (min-width: 600px) {
+  .question-content {
+    margin: 0 15% 10%;
+  }
+}
+
+.question-content > :not(:first-child) {
+  margin-top: 15px;
+}
+
+.question-content-text {
+  border: 1px solid var(--intent-color-light);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.question-content-text:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+@supports not (overflow-wrap: anywhere) {
+  .question-content-text {
+    word-break: break-word;
+  }
+}
+
+.question-content-answers {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.question-footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 10%;
+}
+
+.answer-button {
+  --answer-button-directional-margin: 10px;
+}
+
+.answer-button:not(:first-child) {
+  margin-left: var(--answer-button-directional-margin);
+}
+
+.answer-button:not(:last-child) {
+  margin-right: var(--answer-button-directional-margin);
+}
+
+.answer-button:first-child,
+.answer-button:last-child {
+  width: calc(50% - var(--answer-button-directional-margin));
+}
+
+.answer-button:not(:first-child, :last-child) {
+  width: calc(50% - 2 * var(--answer-button-directional-margin));
+}
+
+.answer-button-button {
+  width: 100%;
+}
